@@ -155,8 +155,6 @@ export default class Canvas extends Component {
             scalesPageToFit={false}
             javaScriptEnabled
             domStorageEnabled
-            thirdPartyCookiesEnabled
-            allowUniversalAccessFromFileURLs
           />
         </View>
       );
@@ -171,6 +169,8 @@ export default class Canvas extends Component {
           onMessage={this.handleMessage}
           onLoad={this.handleLoad}
           scrollEnabled={false}
+          useWebKit
+          startInLoadingState
         />
       </View>
     );
